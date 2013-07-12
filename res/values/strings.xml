@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Defriendly</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_id">303110906494072</string>
+    <string name="SelectedFirstNamePlaceholder">Pick a first name</string>
+    <string name="SelectedLastNamePlaceholder">Pick a last name</string>
+    <string name="WrongCounterDenom">/3</string>
+
+</resources>

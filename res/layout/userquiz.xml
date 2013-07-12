@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEAD"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/topLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#FF6F69"
+        android:src="@drawable/defriendly_title" />
+    <ImageView
+        android:id="@+id/namesDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topLogo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/defriendly_names_divider" />
+    
+    <TextView
+        android:id="@+id/firstNameHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLogo"
+        android:layout_toLeftOf="@+id/namesDivider"
+        android:text="First Names"
+        android:textSize="@dimen/headingTextSize" />
+    <TextView
+        android:id="@+id/firstName0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/namesDivider"
+        android:layout_below="@+id/firstNameHeading"
+        android:text=""
+        android:textSize="@dimen/firstNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="FirstNameClicked" />
+    <TextView
+        android:id="@+id/firstName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/namesDivider"
+        android:layout_below="@+id/firstName0"
+        android:text=""
+        android:textSize="@dimen/firstNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="FirstNameClicked" />
+    <TextView
+        android:id="@+id/firstName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/namesDivider"
+        android:layout_below="@+id/firstName1"
+        android:text=""
+        android:textSize="@dimen/firstNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="FirstNameClicked" />
+	<TextView
+        android:id="@+id/firstName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/namesDivider"
+        android:layout_below="@+id/firstName2"
+        android:text=""
+        android:textSize="@dimen/firstNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="FirstNameClicked" />
+	
+	
+	<TextView
+        android:id="@+id/lastNameHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLogo"
+        android:layout_toRightOf="@+id/namesDivider"
+        android:text="Last Names"
+        android:textSize="@dimen/headingTextSize" />
+	<TextView
+        android:id="@+id/lastName0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/namesDivider"
+        android:layout_below="@+id/lastNameHeading"
+        android:text=""
+        android:textSize="@dimen/lastNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="LastNameClicked" />
+	<TextView
+        android:id="@+id/lastName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/namesDivider"
+        android:layout_below="@+id/lastName0"
+        android:text=""
+        android:textSize="@dimen/lastNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="LastNameClicked" />
+	<TextView
+        android:id="@+id/lastName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/namesDivider"
+        android:layout_below="@+id/lastName1"
+        android:text=""
+        android:textSize="@dimen/lastNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="LastNameClicked" />
+	<TextView
+        android:id="@+id/lastName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/namesDivider"
+        android:layout_below="@+id/lastName2"
+        android:text=""
+        android:textSize="@dimen/lastNameTextSize"
+        android:textColor="#96CEB4"
+        android:clickable="true"
+        android:onClick="LastNameClicked" />
+	
+	<TextView
+        android:id="@+id/selectedFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namesDivider"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="@+string/SelectedFirstNamePlaceholder"
+        android:textStyle="italic"
+        android:textSize="@dimen/selectedTextSize" />
+
+	<TextView
+        android:id="@+id/selectedLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="@+string/SelectedLastNamePlaceholder"
+        android:textStyle="italic"
+        android:textSize="@dimen/selectedTextSize" />
+	
+	<ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/defriendly_pic_placeholder" />
+	
+	<ImageView
+        android:id="@+id/nextButton_disabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namesDivider"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/defriendly_next_button_disabled" />
+	<ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namesDivider"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        android:src="@drawable/defriendly_next_button"
+        android:onClick="getPictureAndInfo" />
+	
+	<TextView
+        android:id="@+id/rightCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="95dp"
+        android:text="0"
+        android:textColor="#79EE7F"
+        android:textSize="@dimen/wrongCounterNumerSize" />
+	
+	<TextView
+        android:id="@+id/wrongCounterNumer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rightCounter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="95dp"
+        android:text="0"
+        android:textColor="#F56F6C"
+        android:textSize="@dimen/wrongCounterNumerSize" />
+	<TextView
+        android:id="@+id/wrongCounterDenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rightCounter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="45dp"
+        android:text="@+string/WrongCounterDenom"
+        android:textSize="20dp" />
+	
+</RelativeLayout>

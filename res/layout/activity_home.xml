@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEAD"
+    tools:context=".HomeActivity" >
+
+    <ImageView
+        android:id="@+id/welcomeLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:background="#FF6F69"
+        android:src="@drawable/defriendly_logo_large" />
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/welcomeLogo"
+        android:text=""
+        android:textColor="#8C8C8C"
+        android:textSize="@dimen/selectedTextSize" />
+    <TextView
+        android:id="@+id/friendCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcome"
+        android:textColor="#FFCC5C"
+        android:textSize="@dimen/wrongCounterNumerSize"
+        android:text="" />
+    <TextView
+        android:id="@+id/friendCountContinued"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/friendCount"
+        android:text=""
+        android:textColor="#8C8C8C"
+        android:textSize="@dimen/selectedTextSize" />
+    <TextView
+        android:id="@+id/welcomeContinued"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/friendCountContinued"
+        android:text=""
+        android:textColor="#8C8C8C"
+        android:textSize="@dimen/selectedTextSize" />
+    
+    <ImageView
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeContinued"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/defriendly_start_button"
+        android:visibility="invisible"
+        android:onClick="startOther" />
+    <ImageView
+        android:id="@+id/buttonPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeContinued"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/defriendly_pic_placeholder" />
+
+</RelativeLayout>
